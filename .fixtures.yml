@@ -1,0 +1,11 @@
+fixtures:
+  symlinks:
+    "role": "#{source_dir}/site/role"
+    "profile": "#{source_dir}/site/profile"
+  forge_modules:
+    inifile: 
+      repo: "puppetlabs/inifile"
+      ref: "2.2.0"
+    stdlib:
+      repo: "puppetlabs/stdlib"
+      ref: "4.24.0"

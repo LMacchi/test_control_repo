@@ -1,0 +1,28 @@
+require 'spec_helper'
+
+describe "role::win" do
+
+  context "using fact set win" do
+    let(:facts) { {"agent_specified_environment"=>"production", "aio_agent_build"=>"5.3.2", "aio_agent_version"=>"5.3.2", "archive_windir"=>"C:\\ProgramData\\staging", "common_appdata"=>"C:\\ProgramData", "dmi"=>{"manufacturer"=>"Phoenix Technologies LTD", "product"=>{"name"=>"VMware Virtual Platform", "serial_number"=>"VMware-42 16 68 f4 d4 81 1c 2b-1f e5 8e c3 3a 37 e3 8d"}}, "env_windows_installdir"=>"C:\\Program Files\\Puppet Labs\\Puppet", "facterversion"=>"3.9.2", "hypervisors"=>{"vmware"=>{}}, "identity"=>{"privileged"=>true, "user"=>"ADMINISTRATORS/admin"}, "is_pe"=>false, "is_virtual"=>true, "isdbclustered"=>"no", "java_major_version"=>"8", "java_patch_level"=>"121", "java_version"=>"1.8.0_121", "kernel"=>"windows", "kernelmajversion"=>"6.3", "kernelrelease"=>"6.3.9600", "kernelversion"=>"6.3.9600", "mco_confdir"=>"C:/ProgramData/PuppetLabs/mcollective/etc", "mco_server_config"=>"C:/ProgramData/PuppetLabs/mcollective/etc/server.cfg", "mco_server_settings"=>{"plugin.yaml"=>"C:\\ProgramData/PuppetLabs/mcollective/etc/facts.yaml", "libdir"=>"C:\\ProgramData/PuppetLabs/mcollective/etc/plugins;C:\\ProgramData/PuppetLabs/mcollective/plugins"}, "memory"=>{"system"=>{"available"=>"6.41 GiB", "available_bytes"=>6884130816, "capacity"=>"19.85%", "total"=>"8.00 GiB", "total_bytes"=>8589328384, "used"=>"1.59 GiB", "used_bytes"=>1705197568}}, "networking"=>{"domain"=>"test.puppet.com", "fqdn"=>"win.test.puppet.com", "hostname"=>"win", "interfaces"=>{"Ethernet0"=>{"bindings"=>[{"address"=>"10.10.10.10", "netmask"=>"255.255.255.0", "network"=>"10.240.86.0"}], "ip"=>"10.10.10.10", "mac"=>"00:50:99:11:99:11", "mtu"=>1500, "netmask"=>"255.255.255.0", "network"=>"10.10.10.0"}}, "ip"=>"192.10.10.10", "mac"=>"00:50:99:22:99:22", "mtu"=>1500, "netmask"=>"255.255.255.0", "network"=>"192.10.10.0", "primary"=>"Ethernet0"}, "os"=>{"architecture"=>"x64", "family"=>"windows", "hardware"=>"x86_64", "name"=>"windows", "release"=>{"full"=>"2012 R2", "major"=>"2012 R2"}, "windows"=>{"system32"=>"C:\\Windows\\system32"}}, "package_provider"=>"windows", "path"=>"C:\\Program Files\\Puppet Labs\\Puppet\\puppet\\bin;C:\\Program Files\\Puppet Labs\\Puppet\\facter\\bin;C:\\Program Files\\Puppet Labs\\Puppet\\hiera\\bin;C:\\Program Files\\Puppet Labs\\Puppet\\mcollective\\bin;C:\\Program Files\\Puppet Labs\\Puppet\\bin;C:\\Program Files\\Puppet Labs\\Puppet\\sys\\ruby\\bin;C:\\Program Files\\Puppet Labs\\Puppet\\sys\\tools\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Puppet Labs\\Puppet\\bin", "pe_concat_basedir"=>"C:/ProgramData/PuppetLabs/puppet/cache/pe_concat", "platform_symlink_writable"=>false, "processors"=>{"count"=>2, "isa"=>"x64", "models"=>["Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz", "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz"], "physicalcount"=>2}, "puppet_agent_appdata"=>"C:\\ProgramData", "puppet_agent_pid"=>1440, "puppet_client_datadir"=>"C:/ProgramData/PuppetLabs/puppet/cache/client_data", "puppet_confdir"=>"C:/ProgramData/PuppetLabs/puppet/etc", "puppet_config"=>"C:/ProgramData/PuppetLabs/puppet/etc/puppet.conf", "puppet_environmentpath"=>"C:/ProgramData/PuppetLabs/code/environments", "puppet_files_dir_present"=>false, "puppet_inventory_metadata"=>{"packages"=>{"collection_enabled"=>true, "last_collection_time"=>"2.7725s"}}, "puppet_master_server"=>"master.puppet.com", "puppet_server"=>"master.puppet.com", "puppet_ssldir"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl", "puppet_sslpaths"=>{"privatedir"=>{"path"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl/private", "path_exists"=>true}, "privatekeydir"=>{"path"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl/private_keys", "path_exists"=>true}, "publickeydir"=>{"path"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl/public_keys", "path_exists"=>true}, "certdir"=>{"path"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl/certs", "path_exists"=>true}, "requestdir"=>{"path"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl/certificate_requests", "path_exists"=>true}, "hostcrl"=>{"path"=>"C:/ProgramData/PuppetLabs/puppet/etc/ssl/crl.pem", "path_exists"=>true}}, "puppet_stringify_facts"=>false, "puppet_vardir"=>"C:/ProgramData/PuppetLabs/puppet/cache", "puppetversion"=>"5.3.2", "ruby"=>{"platform"=>"x64-mingw32", "sitedir"=>"C:/Program Files/Puppet Labs/Puppet/sys/ruby/lib/ruby/site_ruby/2.4.0", "version"=>"2.4.1"}, "service_provider"=>"windows", "staging_http_get"=>"curl", "system_uptime"=>{"days"=>78, "hours"=>1895, "seconds"=>6824018, "uptime"=>"78 days"}, "timezone"=>"Central Standard Time", "vcsrepo_svn_ver"=>"", "virtual"=>"vmware", "windows_java_temp"=>"C:\\Users\\test\\AppData\\Local\\Temp\\3"} }
+    let(:pre_condition) {
+      pp = <<-END
+$onceover_class = 'role::win'
+$onceover_node = 'win'
+# We are not going to actually have this service anywhere on our servers but
+# our code needs to refresh it. This is to trick puppet into doing nothing
+service { 'pe-puppetserver':
+  ensure     => 'running',
+  enable     => false,
+  hasrestart => false, # Force Puppet to use start and stop to restart
+  start      => 'echo "Start"', # This will always exit 0
+  stop       => 'echo "Stop"', # This will also always exit 0
+  hasstatus  => false, # Force puppet to use our command for status
+  status     => 'echo "Status"', # This will always exit 0 and therefore Puppet will think the service is running
+  provider   => 'base',
+}
+END
+    }
+    it { should compile }
+  end
+end
+
