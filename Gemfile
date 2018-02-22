@@ -1,3 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'onceover'
+gem 'puppet'
+gem 'rspec-puppet'
+gem 'puppetlabs_spec_helper'
+
