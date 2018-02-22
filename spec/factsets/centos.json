@@ -1,0 +1,386 @@
+{
+  "name": "centos.test.puppet.com",
+  "values": {
+    "aio_agent_build": "5.3.2",
+    "aio_agent_version": "5.3.2",
+    "architecture": "x86_64",
+    "asm_disks": [
+    ],
+    "augeas": {
+      "version": "1.8.1"
+    },
+    "augeasversion": "1.8.1",
+    "bios_release_date": "09/21/2015",
+    "bios_vendor": "Phoenix Technologies LTD",
+    "bios_version": "6.00",
+    "blockdevice_fd0_size": 4096,
+    "blockdevice_sda_model": "Virtual disk",
+    "blockdevice_sda_size": 53687091200,
+    "blockdevice_sda_vendor": "VMware",
+    "blockdevice_sdb_model": "Virtual disk",
+    "blockdevice_sdb_size": 53687091200,
+    "blockdevice_sdb_vendor": "VMware",
+    "blockdevice_sdc_model": "Virtual disk",
+    "blockdevice_sdc_size": 53687091200,
+    "blockdevice_sdc_vendor": "VMware",
+    "blockdevice_sr0_model": "VMware SATA CD00",
+    "blockdevice_sr0_size": 1073741312,
+    "blockdevice_sr0_vendor": "NECVMWar",
+    "blockdevices": "fd0,sda,sdb,sdc,sr0",
+    "boardmanufacturer": "Intel Corporation",
+    "boardproductname": "440BX Desktop Reference Platform",
+    "boardserialnumber": "None",
+    "chassisassettag": "No Asset Tag",
+    "chassistype": "Other",
+    "disks": {
+      "sda": {
+        "model": "Virtual disk",
+        "size": "50.00 GiB",
+        "size_bytes": 53687091200,
+        "vendor": "VMware"
+      },
+      "sdb": {
+        "model": "Virtual disk",
+        "size": "50.00 GiB",
+        "size_bytes": 53687091200,
+        "vendor": "VMware"
+      },
+      "sdc": {
+        "model": "Virtual disk",
+        "size": "50.00 GiB",
+        "size_bytes": 53687091200,
+        "vendor": "VMware"
+      }
+    },
+   "domain": "test.puppet.com",
+    "env_temp_variable": "\\tmp",
+    "facterversion": "3.9.2",
+    "filesystems": "xfs",
+    "fqdn": "centos.test.puppet.com",
+    "gid": "root",
+    "hardwareisa": "x86_64",
+    "hardwaremodel": "x86_64",
+    "hostname": "centos",
+    "hypervisors": {
+      "vmware": {
+        "version": "ESXi 6.0"
+      }
+    },
+    "id": "root",
+    "identity": {
+      "gid": 0,
+      "group": "root",
+      "privileged": true,
+      "uid": 0,
+      "user": "root"
+    },
+    "interfaces": "eth0,lo",
+    "ipaddress": "10.10.10.10",
+    "ipaddress6_lo": "::1",
+    "ipaddress_lo": "127.0.0.1",
+    "is_pe": false,
+    "is_virtual": true,
+    "isdatamounted": "true",
+    "isdbclustered": "no",
+    "java_default_home": "/usr/java/jre-vmware",
+    "java_major_version": "8",
+    "java_patch_level": "72",
+    "java_version": "1.8.0_72",
+    "kernel": "Linux",
+    "kernelmajversion": "3.10",
+    "kernelrelease": "3.10.0-327.55.3.el7.x86_64",
+    "kernelversion": "3.10.0",
+    "load_averages": {
+      "15m": 0.07,
+      "1m": 0.0,
+      "5m": 0.06
+    },
+    "lsbdistcodename": "Maipo",
+    "lsbdistdescription": "Red Hat Enterprise Linux Server release 7.2 (Maipo)",
+    "lsbdistid": "RedHatEnterpriseServer",
+    "lsbdistrelease": "7.2",
+    "lsbmajdistrelease": "7",
+    "lsbminordistrelease": "2",
+    "lsbrelease": ":core-4.1-amd64:core-4.1-noarch",
+    "macaddress": "00:50:51:91:c1:c1",
+    "manufacturer": "VMware, Inc.",
+    "mco_client_config": "/etc/puppetlabs/mcollective/client.cfg",
+    "mco_client_settings": {
+      "libdir": "/opt/puppetlabs/mcollective/plugins:/usr/share/mcollective/plugins:/usr/libexec/mcollective"
+    },
+    "mco_confdir": "/etc/mcollective/etc",
+    "mco_server_config": "/etc/puppetlabs/mcollective/server.cfg",
+    "mco_server_settings": {
+      "plugin.yaml": "/etc/puppetlabs/mcollective/facts.yaml",
+      "libdir": "/opt/puppet/libexec/mcollective:/opt/puppetlabs/mcollective/plugins"
+    },
+    "memory": {
+      "swap": {
+        "available": "2.00 GiB",
+        "available_bytes": 2142126080,
+        "capacity": "0.25%",
+        "total": "2.00 GiB",
+        "total_bytes": 2147479552,
+        "used": "5.11 MiB",
+        "used_bytes": 5353472
+      },
+      "system": {
+        "available": "1.03 GiB",
+        "available_bytes": 1105719296,
+        "capacity": "42.70%",
+        "total": "1.80 GiB",
+        "total_bytes": 1929728000,
+        "used": "785.84 MiB",
+        "used_bytes": 824008704
+      }
+    },
+    "memoryfree": "1.03 GiB",
+    "memoryfree_mb": 1054.49609375,
+    "memorysize": "1.80 GiB",
+    "memorysize_mb": 1840.33203125,
+    "mountpoints": {
+      "/": {
+        "available": "681.16 MiB",
+        "available_bytes": 714252288,
+        "capacity": "73.29%",
+        "device": "/dev/mapper/rhel_rootvg-root",
+        "filesystem": "xfs",
+        "options": [
+          "rw",
+          "relatime",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "size": "2.49 GiB",
+        "size_bytes": 2673868800,
+        "used": "1.83 GiB",
+        "used_bytes": 1959616512
+      },
+      "/boot": {
+        "available": "282.89 MiB",
+        "available_bytes": 296636416,
+        "capacity": "43.04%",
+        "device": "/dev/sda1",
+        "filesystem": "xfs",
+        "options": [
+          "rw",
+          "relatime",
+          "attr2",
+          "inode64",
+          "noquota"
+        ],
+        "size": "496.67 MiB",
+        "size_bytes": 520794112,
+        "used": "213.77 MiB",
+        "used_bytes": 224157696
+      }
+    },
+    "mtu_eth0": 1500,
+    "mtu_lo": 65536,
+    "nas_shares": "",
+    "netmask": "255.255.255.0",
+    "netmask6": "ffff:ffff:ffff:ffff::",
+    "netmask6_eth0": "ffff:ffff:ffff:ffff::",
+    "netmask6_lo": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+    "netmask_eth0": "255.255.255.0",
+    "netmask_lo": "255.0.0.0",
+    "network": "10.10.10.10",
+    "network6_lo": "::1",
+    "network_lo": "127.0.0.0",
+    "networking": {
+      "domain": "test.puppet.com",
+      "fqdn": "centos.test.puppet.com",
+      "hostname": "centos",
+      "interfaces": {
+        "eth0": {
+          "bindings": [
+            {
+              "address": "10.10.10.10",
+              "netmask": "255.255.255.0",
+              "network": "10.240.87.0"
+            }
+          ],
+          "bindings6": [
+            {
+              "address": "fe80::250:56ff:fe96:c2c4",
+              "netmask": "ffff:ffff:ffff:ffff::",
+              "network": "fe80::"
+            }
+          ],
+          "ip": "10.240.87.86",
+          "ip6": "fe80::250:56ff:fe96:c2c4",
+          "mac": "00:50:56:96:c2:c4",
+          "mtu": 1500,
+          "netmask": "255.255.255.0",
+          "netmask6": "ffff:ffff:ffff:ffff::",
+          "network": "10.240.87.0",
+          "network6": "fe80::"
+        },
+        "lo": {
+          "bindings": [
+            {
+              "address": "127.0.0.1",
+              "netmask": "255.0.0.0",
+              "network": "127.0.0.0"
+            }
+          ],
+          "bindings6": [
+            {
+              "address": "::1",
+              "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+              "network": "::1"
+            }
+          ],
+          "ip": "127.0.0.1",
+          "ip6": "::1",
+          "mtu": 65536,
+          "netmask": "255.0.0.0",
+          "netmask6": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+          "network": "127.0.0.0",
+          "network6": "::1"
+        }
+      },
+      "ip": "10.240.87.86",
+      "ip6": "fe80::250:56ff:fe96:c2c4",
+      "mac": "00:50:56:96:c2:c4",
+      "mtu": 1500,
+      "netmask": "255.255.255.0",
+      "netmask6": "ffff:ffff:ffff:ffff::",
+      "network": "10.240.87.0",
+      "network6": "fe80::",
+      "primary": "eth0"
+    },
+    "operatingsystem": "RedHat",
+    "operatingsystemmajrelease": "7",
+    "operatingsystemrelease": "7.2",
+    "os": {
+      "architecture": "x86_64",
+      "distro": {
+        "codename": "Maipo",
+        "description": "Red Hat Enterprise Linux Server release 7.2 (Maipo)",
+        "id": "RedHatEnterpriseServer",
+        "release": {
+          "full": "7.2",
+          "major": "7",
+          "minor": "2"
+        },
+        "specification": ":core-4.1-amd64:core-4.1-noarch"
+      },
+      "family": "RedHat",
+      "hardware": "x86_64",
+      "name": "RedHat",
+      "release": {
+        "full": "7.2",
+        "major": "7",
+        "minor": "2"
+      },
+      "selinux": {
+        "enabled": false
+      }
+    },
+    "osfamily": "RedHat",
+    "package_provider": "yum",
+    "pe_concat_basedir": "/opt/puppetlabs/puppet/cache/pe_concat",
+    "pe_razor_server_version": "package pe-razor-server is not installed",
+    "physicalprocessorcount": 1,
+    "platform_symlink_writable": true,
+    "platform_tag": "el-7-x86_64",
+    "processor0": "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz",
+    "processorcount": 1,
+    "processors": {
+      "count": 1,
+      "isa": "x86_64",
+      "models": [
+        "Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz"
+      ],
+      "physicalcount": 1
+    },
+    "productname": "VMware Virtual Platform",
+    "puppet_agent_pid": 31557,
+    "puppet_client_datadir": "/opt/puppetlabs/puppet/cache/client_data",
+    "puppet_confdir": "/etc/puppetlabs/puppet",
+    "puppet_config": "/etc/puppetlabs/puppet/puppet.conf",
+    "puppet_environmentpath": "/etc/puppetlabs/code/environments",
+    "puppet_files_dir_present": false,
+    "puppet_inventory_metadata": {
+      "packages": {
+        "collection_enabled": false,
+        "last_collection_time": "0.0s"
+      }
+    },
+    "puppet_master_server": "puppet.test.puppet.com",
+    "puppet_server": "puppet.test.puppet.com",
+    "puppet_ssldir": "/etc/puppetlabs/puppet/ssl",
+    "puppet_sslpaths": {
+      "privatedir": {
+        "path": "/etc/puppetlabs/puppet/ssl/private",
+        "path_exists": true
+      },
+      "privatekeydir": {
+        "path": "/etc/puppetlabs/puppet/ssl/private_keys",
+        "path_exists": true
+      },
+      "publickeydir": {
+        "path": "/etc/puppetlabs/puppet/ssl/public_keys",
+        "path_exists": true
+      },
+      "certdir": {
+        "path": "/etc/puppetlabs/puppet/ssl/certs",
+        "path_exists": true
+      },
+      "requestdir": {
+        "path": "/etc/puppetlabs/puppet/ssl/certificate_requests",
+        "path_exists": true
+      },
+      "hostcrl": {
+        "path": "/etc/puppetlabs/puppet/ssl/crl.pem",
+        "path_exists": true
+      }
+    },
+    "puppet_stringify_facts": false,
+    "puppet_vardir": "/opt/puppetlabs/puppet/cache",
+    "puppetversion": "5.3.2",
+    "root_home": "/root",
+    "ruby": {
+      "platform": "x86_64-linux",
+      "sitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.4.0",
+      "version": "2.4.1"
+    },
+    "rubyplatform": "x86_64-linux",
+    "rubysitedir": "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.4.0",
+    "rubyversion": "2.4.1",
+    "selinux": false,
+    "serialnumber": "VMware-42 16 40 33 a2 c4 69 72-87 1e 59 d8 5c 85 bf e6",
+    "service_provider": "systemd",
+    "staging_http_get": "curl",
+    "swap_in_gb": "2.0G",
+    "swapfree": "2.00 GiB",
+    "swapfree_mb": 2042.890625,
+    "swapsize": "2.00 GiB",
+    "swapsize_mb": 2047.99609375,
+    "system_uptime": {
+      "days": 19,
+      "hours": 475,
+      "seconds": 1711270,
+      "uptime": "19 days"
+    },
+    "timezone": "CST",
+    "tmp_in_gb": "5.0G",
+    "uptime": "19 days",
+    "uptime_days": 19,
+    "uptime_hours": 475,
+    "uptime_seconds": 1711270,
+    "uuid": "42164033-A2C4-6972-871E-59D85C85BFE6",
+    "var_in_gb": "4.0G",
+    "vcsrepo_svn_ver": "1.7.14",
+    "veritas_enabled": "no",
+    "virtual": "vmware",
+    "windows_java_temp": "\\tmp",
+    "clientcert": "centos.test.puppet.com",
+    "clientversion": "5.3.2",
+    "clientnoop": false
+  },
+  "timestamp": "2018-02-08T11:57:10.825082616-06:00",
+  "expiration": "2018-02-08T12:27:10.836343233-06:00"
+}

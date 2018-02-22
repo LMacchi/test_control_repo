@@ -1,0 +1,35 @@
+# Classes to be tested
+classes:
+  - role::puppet
+  - role::win
+
+# Nodes to tests classes on, this refers to a 'factset' or 'nodeset'
+# depending on weather you are running 'spec' or 'acceptance' tests
+nodes:
+  - centos
+  - win
+
+# You can group classes here to save typing
+class_groups:
+  linux_classes:
+    - role::puppet
+  win_classes:
+    - role::win
+
+# You can group nodes here to save typing
+# We have created a 'non_windows_nodes' group because we can't
+# give you Windows vagrant boxes to test with because licensing,
+# we can give you fact sets though so go crazy with spec testing!
+node_groups:
+  linux_nodes:
+    - centos
+  win_nodes:
+    - win
+
+test_matrix:
+  - linux_nodes:
+      classes: 'linux_classes'
+      tests: 'spec'
+  - win_nodes:
+      classes: 'win_classes'
+      tests: 'spec'

@@ -1,0 +1,5 @@
+---
+profile::puppet::master::puppet_autosign_shared_secret: "test123"
+profile::puppet::master::puppet_tagmail_users:
+  err: test@puppet.com
+  war: notest_puppet.com
