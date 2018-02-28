@@ -76,6 +76,7 @@
       "network": "192.10.10.0",
       "primary": "Ethernet0"
     },
+    "operatingsystem": "windows",
     "os": {
       "architecture": "x64",
       "family": "windows",
